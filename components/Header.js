@@ -24,6 +24,7 @@ function Header() {
         height={40}
         layout="fixed"
       />
+      <h1 className="text-6xl">header</h1>
       <div className="flex">
         <SearchIcon className="h-6" />
         <input type="text" placeholder="Search Facebook" />
