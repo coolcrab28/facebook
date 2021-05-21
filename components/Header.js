@@ -17,7 +17,8 @@ import {
 
 function Header() {
   return (
-    <div>
+    <div className="flex sticky top-0 z-50 bg-white items-center p-2 lg:px-5 shadow-md">
+      {/* left */}
       <div className="flex items-center">
         <Image
           src="https://links.papareact.com/5me"
@@ -28,21 +29,25 @@ function Header() {
         <div className="flex ml-2 items-center rounded-full bg-gray-100 p-2">
           <SearchIcon className="h-6 text-gray-600" />
           <input
-            className="flex ml-2 items-center bg-transparent outline-none placehoder-gray-500"
+            className="hidden md:inline-flex ml-2 items-center bg-transparent outline-none placehoder-gray-500"
             type="text"
             placeholder="Search Facebook"
           />
         </div>
       </div>
-
+      {/* center */}
       <div className="flex justify-center flex-grow">
         <div className="flex space-x-6 md:space-x-2">
-          <HomeIcon className="h-6 md:px-10 sm:h-5 md:hover:bg-gray-300 rounded-xl" />
-          <FlagIcon className="h-6 md:px-10 sm:h-5 md:hover:bg-gray-300 rounded-xl" />
-          <PlayIcon className="h-6 md:px-10 sm:h-5 md:hover:bg-gray-300 rounded-xl" />
-          <UserGroupIcon className="h-6 md:px-10 sm:h-5 md:hover:bg-gray-300 rounded-xl" />
+          <HomeIcon className="h-6 md:px-10 sm:h-5 md:hover:bg-gray-100 rounded-xl" />
+          <FlagIcon className="h-6 md:px-10 sm:h-5 md:hover:bg-gray-100 rounded-xl" />
+          <PlayIcon className="h-6 md:px-10 sm:h-5 md:hover:bg-gray-100 rounded-xl" />
+          <UserGroupIcon className="h-6 md:px-10 sm:h-5 md:hover:bg-gray-100 rounded-xl" />
         </div>
       </div>
+    {/* right */}
+    <div className="flex items-center sm:space-x-2 justify-end">
+      <p className="whitespace-nowrap font-semibold pr-3" >Lakshya Mahajan</p>
+    </div>
     </div>
   );
 }
