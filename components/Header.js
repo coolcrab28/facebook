@@ -36,7 +36,12 @@ function Header() {
       </div>
 
       <div className="flex justify-center flex-grow">
-        <div>hi</div>
+        <div className="flex space-x-6 md:space-x-2">
+          <HomeIcon className="h-6 md:px-10 sm:h-5 md:hover:bg-gray-300 rounded-xl" />
+          <FlagIcon className="h-6 md:px-10 sm:h-5 md:hover:bg-gray-300 rounded-xl" />
+          <PlayIcon className="h-6 md:px-10 sm:h-5 md:hover:bg-gray-300 rounded-xl" />
+          <UserGroupIcon className="h-6 md:px-10 sm:h-5 md:hover:bg-gray-300 rounded-xl" />
+        </div>
       </div>
     </div>
   );
