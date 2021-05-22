@@ -8,6 +8,7 @@ import {
   ViewGridIcon,
 } from "@heroicons/react/solid";
 
+import {signOut, useSession} from "next-auth/client"
 import {
   FlagIcon,
   PlayIcon,
@@ -16,6 +17,7 @@ import {
 } from "@heroicons/react/outline";
 
 function Header() {
+  const [session] = useSession();f
   return (
     <div className="flex sticky top-0 z-50 bg-white items-center p-2 lg:px-5 shadow-md">
       {/* left */}
@@ -46,6 +48,9 @@ function Header() {
       </div>
     {/* right */}
     <div className="flex items-center sm:space-x-2 justify-end">
+      <Image
+      onClick={signOut}
+      />
       <p className="whitespace-nowrap font-semibold pr-3" >Lakshya Mahajan</p>
     </div>
     </div>
